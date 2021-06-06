@@ -1,0 +1,50 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    background-image: linear-gradient(#fffd9e, #a2f788, #5250e0);
+    font-size: larger;
+}
+#fibo{
+    margin: 10px;
+}
+.graduation-counter{
+    text-align: center;
+    background-color: #482f52;
+    padding: 10px;
+    color: white;
+}
+button, .btn {
+    outline: none;
+    background-color:#c4ac42;
+	border-radius:28px;
+	border:1px solid #000000;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: Arial;
+	padding:10px 15px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+button:hover, .btn:hover{
+    background-color:#5cbf2a;
+}
+button:active, .btn:active{
+    position:relative;
+	top:1px;
+}
+input{
+    background-color:#d8e9dc;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+    padding:10px 15px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+label{
+    color: oldlace;
+}
+#hiphop, #bmi-calculator {
+    text-align: center;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+    <style>
+        body{
+            background-color: skyblue;
+            margin: 0;
+        }
+        div.main {
+            font-size: 0;
+            margin: 0;
+        }
+        div.content {
+            padding: 15px;
+        }
+        button {
+            border: none;
+            outline: none;
+            width: 50%;
+            cursor: pointer;
+        }
+        #btn1{
+            background: skyblue;
+        }
+        #btn2{
+            background: #FFA07A;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <button id="btn1" onclick="PageOne()"><h1>Page 1</h1></button>
+        <button id="btn2" onclick="PageTwo()"><h1>Page 2</h1></button>
+    </div>
+
+    <div class="content">
+        <h2 id="page_h">Page 1 content</h2>
+        <p id="page_p">This is some nice content on page 1</p>
+    </div>
+    <!-- javascript file declaration -->
+    <script>
+        function PageOne() {
+            document.getElementById('page_h').innerHTML = "Page 1 content";
+            document.getElementById('page_p').innerHTML = "This is some nice content on page 1";
+            document.body.style.backgroundColor = "skyblue";
+        }
+
+        function PageTwo() {
+            document.getElementById('page_h').innerHTML = "Page 2 content";
+            document.getElementById('page_p').innerHTML = "Lorem ipsum. Some different content here";
+            document.body.style.backgroundColor = "#FFA07A";
+        }
+    </script>
+</body>
+</html>

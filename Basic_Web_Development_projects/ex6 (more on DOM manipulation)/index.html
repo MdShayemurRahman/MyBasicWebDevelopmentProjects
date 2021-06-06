@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX6</title>
+
+    <link rel="stylesheet" href="styling.css">
+
+    <script type="text/javascript" src="functionality.js"></script>
+
+</head>
+
+<body>
+    <!-- 1.fibonacci-series -->
+    <div id="fibo"></div>
+
+    
+
+    <hr>
+
+    <!-- 2.graduation-counter -->
+    <div class="graduation-counter" id="graduation-counter"></div>
+    <hr>
+
+    <!-- 3.bmi-calculator -->
+    <div id="bmi-calculator">
+        <label for="masskg">Mass(kg): </label>
+        <input type="number" id="masskg" placeholder="Enter mass in (kg)">
+
+        <label for="heightcm">Height(cm): </label>
+        <input type="number" id="heightcm" placeholder="Enter weight in (cm)">
+
+        <button onclick="BMI()">Calculate BMI</button>
+        <span id="Result"></span>
+    </div>
+    <hr>
+
+    <!-- 4.hip-hop game -->
+    <div id="hiphop">
+        <label for="b1">Input 1: </label>
+        <input type="number" id="b1">
+        <label for="b2">Input 2: </label>
+        <input type="number" id="b2">
+        <button id="btn" onclick="HipHop()">Values set</button>
+        <!-- <input class="btn" type="button" value="Values Set" onclick="HipHop()"> -->
+        <p id="values"></p>
+    </div>
+
+
+    <script type="text/javascript">fibonacci(); counter();</script>
+</body>
+
+</html>

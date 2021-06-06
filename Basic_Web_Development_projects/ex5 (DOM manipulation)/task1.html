@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        div {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            color: white;
+            font-size: 600%;
+            border: 2px solid gray;
+            padding: 0 5px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span id="current-time"></span>
+        <br>
+        <span id="current-date"></span>
+    </div>
+    
+    <script type= "text/javascript">
+
+        function showTime() {
+            var iTime = new Date();
+            var h = iTime.getHours();
+            var m = iTime.getMinutes();
+            var s = iTime.getSeconds();
+            var session = "AM";
+            
+            if(h == 0){
+                h = 12;
+            }
+            
+            if(h > 12){
+                h = h - 12;
+                session = "PM";
+            }
+        
+            h = (h < 10) ? "0" + h : h; 
+            m = (m < 10) ? "0" + m : m;
+            s = (s < 10) ? "0" + s : s;
+            
+            var time = h + ":" + m + ":" + s + " " + session;
+            setTimeout(showTime, 1000);
+
+            if(s % 2 === 0) {
+                document.getElementById("current-time").innerText = time;
+                document.getElementById("current-time").textContent = time;
+                document.getElementById("current-time").style.color = "#deb887";
+            } else{
+                document.getElementById("current-time").innerText = time; 
+                document.getElementById("current-time").textContent = time; 
+                document.getElementById("current-time").style.color = "#5f9ea0";
+            }
+
+ 
+            var today = new Date();
+            var dd = String(today.getDate()).padStart(2, '0');
+            var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+            var yyyy = today.getFullYear();
+            today = dd + ' - ' + mm + ' - ' + yyyy;
+
+            document.getElementById("current-date").innerHTML = today; // shows date today.
+        }
+        showTime();
+
+    </script>
+</body>
+</html>
+
+

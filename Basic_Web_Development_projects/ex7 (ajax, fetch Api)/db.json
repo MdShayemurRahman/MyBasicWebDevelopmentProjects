@@ -1,0 +1,40 @@
+{
+  "students": [
+    {
+      "id": 0,
+      "name": "Student A",
+      "course_assignment": null,
+      "exercise_points": 32
+    },
+    {
+      "id": 1,
+      "name": "Student B",
+      "course_assignment": null,
+      "exercise_points": 53
+    },
+    {
+      "id": 2,
+      "name": "Student C",
+      "course_assignment": null,
+      "exercise_points": null
+    },
+    {
+      "id": 3,
+      "name": "Student D",
+      "course_assignment": null,
+      "exercise_points": 4
+    },
+    {
+      "id": 4,
+      "name": "Sayem",
+      "course_assignment": null,
+      "exercise_points": 54
+    },
+    {
+      "id": 5,
+      "name": "Bayezid",
+      "course_assignment": null,
+      "exercise_points": 56
+    }
+  ]
+}
